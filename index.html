@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .container {
+            background-color: #f1f1f1;
+            border: 2px solid black;
+            height: 200px;
+        }
+
+        .adiv {
+            height: 20px;
+            background-color: red;
+        }
+
+        .bdiv {
+            height: 20px;
+            background-color: green;
+        }
+
+        .cdiv {
+            height: 20px;
+            background-color: gray;
+        }
+
+        .ddiv {
+            height: 20px;
+            background-color: blue;
+        }
+
+        .ediv {
+            height: 20px;
+            background-color: black;
+        }
+
+        .fdiv {
+            height: 20px;
+            background-color: pink;
+        }
+
+
+
+
+    </style>
+    <title>Bootstrap Practice</title>
+  </head>
+  <body>
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">100% wide until extra extra large breakpoint</div>
+
+    <hr><br>
+
+    <h1>Grid Learning</h1>
+
+    <div class="container">
+        <div class="row">
+            <h2>XL >= 1200px</h2>
+            <div class="col-xl-2 adiv">1</div>
+            <div class="col-xl-2 bdiv">2</div>
+            <div class="col-xl-2 cdiv">3</div>
+            <div class="col-xl-2 ddiv">4</div>
+            <div class="col-xl-2 ediv">5</div>
+            <div class="col-xl-2 fdiv">6</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>This grid layouts will apply to every device and viewport, from xs to xxl.</h2>
+        <div class="row">
+            <div class="col adiv">1 of 2</div>
+            <div class="col bdiv">2 of 2</div>
+        </div>
+        <div class="row">
+            <div class="col cdiv">1 of 3</div>
+            <div class="col ddiv">2 of 3</div>
+            <div class="col ediv">3 of 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2 adiv">1 of 3</div>
+          <div class="col-md-auto bdiv">Variable width content</div>
+          <div class="col col-lg-2 cdiv">3 of 3</div>
+        </div>
+        <div class="row">
+          <div class="col ddiv">1 of 3</div>
+          <div class="col-md-auto ediv">Variable width content</div>
+          <div class="col col-lg-2 fdiv">3 of 3</div>
+        </div>
+      </div>
+s
+      
+      <div class="container">
+        <div class="row row-cols-4">
+          <div class="col adiv">Column</div>
+          <div class="col bdiv">Column</div>
+          <div class="col-6 cdiv">Column</div>
+          <div class="col ddiv">Column</div>
+        </div>
+      </div>
+
+      <hr><br>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
