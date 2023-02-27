@@ -514,9 +514,241 @@
         </button>
       </div>
 
+      <hr>
+      <br>
+
+      <form>
+        <!-- email -->
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <!-- password -->
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <!-- check box -->
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+        <!-- text area -->
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <!-- data list -->
+        <label for="exampleDataList" class="form-label">Datalist example</label>
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+        <datalist id="datalistOptions">
+          <option value="San Francisco">
+          <option value="New York">
+          <option value="Seattle">
+          <option value="Los Angeles">
+          <option value="Chicago">
+        </datalist>
+
+        <br>
+
+        <!-- select -->
+        <select class="form-select" size="2" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+
+        <br>
+
+        <!-- check box -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Checked checkbox
+          </label>
+        </div>
+
+        <br>
+
+        <!-- radio button -->
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Default radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Default checked radio
+          </label>
+        </div>
+
+        <br>
+
+        <!-- switch  -->
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+          <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+          <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+        </div>
+
+        <br>
+
+        <!-- checkbox toggle button -->
+        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+        <label class="btn btn-primary" for="btn-check">Single toggle</label>
+
+        <br><br>
+
+        <!-- radio toggle button -->
+        <input type="radio" class="btn-check" id="btn-check" autocomplete="off">
+        <label class="btn btn-primary" for="btn-check">Single toggle</label>
+
+        <br><br>
+
+        <!-- range -->
+
+        <label for="customRange1" class="form-label">Example range</label>
+        <input type="range" class="form-range" id="customRange1">
+
+        <br>
+
+        <!-- input group -->
+        <div class="input-group">
+          <span class="input-group-text">First and last name</span>
+          <input type="text" aria-label="First name" class="form-control">
+          <input type="text" aria-label="Last name" class="form-control">
+        </div>
+
+        <br>
+
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+          <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+        </div>
+        
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+          <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+        </div>
+        
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+        </div>
 
 
+        <br><br>
 
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        
+        <div class="input-group mb-3">
+          <select class="form-select" id="inputGroupSelect02">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <label class="input-group-text" for="inputGroupSelect02">Options</label>
+        </div>
+        
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+          <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        
+        <div class="input-group">
+          <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+        </div>
+
+        <br><br>
+
+         <!-- Floating layout -->
+
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <br><br>
+
+      <!-- accordion -->
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+
+          <!-- accordion header -->
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+
+          <!-- accordion body -->
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       </div>
     <!-- Bootstrap Bundle with Popper -->
